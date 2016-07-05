@@ -1,1 +1,9 @@
 c:\users\dariuspc\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\bin\Debug\Incremental Game.exe.config
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\bin\Debug\Incremental Game.exe
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\bin\Debug\Incremental Game.pdb
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Debug\Incremental_Game.Form1.resources
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Debug\Incremental_Game.Properties.Resources.resources
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Debug\Incremental Game.csproj.GenerateResource.Cache
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Debug\Incremental Game.exe
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Debug\Incremental Game.pdb
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Debug\Incremental Game.csprojResolveAssemblyReference.cache
