@@ -6,7 +6,7 @@ namespace Incremental_Game
     {
         public int StartingPoints()
         {
-            return 100000;
+            return 100;
         }
 
         public double ChangePoints(double currentPoints, double changeValue, string caseValue)
