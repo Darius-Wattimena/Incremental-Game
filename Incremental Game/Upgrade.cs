@@ -21,6 +21,22 @@ namespace Incremental_Game
             return 0;
         }
 
+        public double GetProfit(string name, int level)
+        {
+            switch (name)
+            {
+                case "Click":
+                    return 0.5 * level;
+                case "Shervin":
+                    return 2.5 * level;
+                case "Ruben":
+                    return 5.0 * level;
+                case "Frank":
+                    return 7.5 * level;
+            }
+            return 0;
+        }
+
         public Upgrade Upgrades(string name, int level)
         {
             switch (name)
@@ -29,10 +45,10 @@ namespace Incremental_Game
                     {
                         return new Upgrade
                         {
-                            Name = "Click Upgrade",
+                            Name = "Click",
                             Description = "Upgrade your clicking power.",
                             Price = GetUpgradePrice(name, level),
-                            Profit = 1,
+                            Profit = GetProfit(name, level),
                             Level = level
                         };
                     }
@@ -43,7 +59,7 @@ namespace Incremental_Game
                             Name = "Shervin",
                             Description = "Get some good profit from this fake black guy.",
                             Price = GetUpgradePrice(name, level),
-                            Profit = 2.5,
+                            Profit = GetProfit(name, level),
                             Level = level
                         };
                     }
@@ -55,7 +71,7 @@ namespace Incremental_Game
                             Name = "Frank",
                             Description = "Every waifus will give you money since Frank is a young god.",
                             Price = GetUpgradePrice(name, level),
-                            Profit = 10,
+                            Profit = GetProfit(name, level),
                             Level = level
                         };
                     }
@@ -66,7 +82,7 @@ namespace Incremental_Game
                             Name = "Ruben",
                             Description = "This guy wil invent your money in csgo stickers for some easy profit.",
                             Price = GetUpgradePrice(name, level),
-                            Profit = 5,
+                            Profit = GetProfit(name, level),
                             Level = level
                         };
                     }

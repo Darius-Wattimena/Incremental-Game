@@ -37,14 +37,22 @@
             this.screenOneLabel3 = new System.Windows.Forms.Label();
             this.screenOneLabel4 = new System.Windows.Forms.Label();
             this.ScreenTwoButton1 = new System.Windows.Forms.Button();
-            this.ScreenTwoLabel1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ScreenTwoButton2 = new System.Windows.Forms.Button();
-            this.ScreenTwoLabel2 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelShervin1 = new System.Windows.Forms.Label();
             this.ScreenTwoButton3 = new System.Windows.Forms.Button();
             this.ScreenTwoButton4 = new System.Windows.Forms.Button();
-            this.ScreenTwoLabel3 = new System.Windows.Forms.Label();
-            this.ScreenTwoLabel4 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelClick1 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelRuben1 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelFrank1 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelClick3 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelClick2 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelShervin2 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelShervin3 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelRuben2 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelRuben3 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelFrank2 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabelFrank3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // homeButton
@@ -98,7 +106,7 @@
             this.screenOneLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.screenOneLabel2.Location = new System.Drawing.Point(12, 101);
             this.screenOneLabel2.Name = "screenOneLabel2";
-            this.screenOneLabel2.Size = new System.Drawing.Size(72, 25);
+            this.screenOneLabel2.Size = new System.Drawing.Size(148, 25);
             this.screenOneLabel2.TabIndex = 5;
             this.screenOneLabel2.Tag = "";
             this.screenOneLabel2.Text = "Points";
@@ -106,12 +114,12 @@
             // screenOneLabel3
             // 
             this.screenOneLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.screenOneLabel3.Location = new System.Drawing.Point(199, 101);
+            this.screenOneLabel3.Location = new System.Drawing.Point(157, 101);
             this.screenOneLabel3.Name = "screenOneLabel3";
-            this.screenOneLabel3.Size = new System.Drawing.Size(70, 25);
+            this.screenOneLabel3.Size = new System.Drawing.Size(124, 25);
             this.screenOneLabel3.TabIndex = 6;
             this.screenOneLabel3.Tag = "";
-            this.screenOneLabel3.Text = "Level:";
+            this.screenOneLabel3.Text = "Click Level:";
             // 
             // screenOneLabel4
             // 
@@ -136,19 +144,6 @@
             this.ScreenTwoButton1.Visible = false;
             this.ScreenTwoButton1.Click += new System.EventHandler(this.ScreenTwoButton_Click);
             // 
-            // ScreenTwoLabel1
-            // 
-            this.ScreenTwoLabel1.Enabled = false;
-            this.ScreenTwoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoLabel1.Location = new System.Drawing.Point(118, 129);
-            this.ScreenTwoLabel1.Name = "ScreenTwoLabel1";
-            this.ScreenTwoLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ScreenTwoLabel1.Size = new System.Drawing.Size(206, 46);
-            this.ScreenTwoLabel1.TabIndex = 9;
-            this.ScreenTwoLabel1.Tag = "";
-            this.ScreenTwoLabel1.Text = "Level up to: 10 \r\nWill cost you: 500";
-            this.ScreenTwoLabel1.Visible = false;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -157,76 +152,196 @@
             // 
             this.ScreenTwoButton2.Enabled = false;
             this.ScreenTwoButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoButton2.Location = new System.Drawing.Point(12, 181);
+            this.ScreenTwoButton2.Location = new System.Drawing.Point(12, 211);
             this.ScreenTwoButton2.Name = "ScreenTwoButton2";
             this.ScreenTwoButton2.Size = new System.Drawing.Size(100, 46);
             this.ScreenTwoButton2.TabIndex = 10;
             this.ScreenTwoButton2.Text = "Upgrade Shervin";
             this.ScreenTwoButton2.UseVisualStyleBackColor = true;
             this.ScreenTwoButton2.Visible = false;
+            this.ScreenTwoButton2.Click += new System.EventHandler(this.ScreenTwoButton2_Click);
             // 
-            // ScreenTwoLabel2
+            // ScreenTwoLabelShervin1
             // 
-            this.ScreenTwoLabel2.Enabled = false;
-            this.ScreenTwoLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoLabel2.Location = new System.Drawing.Point(118, 181);
-            this.ScreenTwoLabel2.Name = "ScreenTwoLabel2";
-            this.ScreenTwoLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ScreenTwoLabel2.Size = new System.Drawing.Size(206, 46);
-            this.ScreenTwoLabel2.TabIndex = 11;
-            this.ScreenTwoLabel2.Tag = "";
-            this.ScreenTwoLabel2.Text = "Level up to: 10 \r\nWill cost you: 500";
-            this.ScreenTwoLabel2.Visible = false;
+            this.ScreenTwoLabelShervin1.Enabled = false;
+            this.ScreenTwoLabelShervin1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelShervin1.Location = new System.Drawing.Point(118, 211);
+            this.ScreenTwoLabelShervin1.Name = "ScreenTwoLabelShervin1";
+            this.ScreenTwoLabelShervin1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelShervin1.Size = new System.Drawing.Size(206, 55);
+            this.ScreenTwoLabelShervin1.TabIndex = 11;
+            this.ScreenTwoLabelShervin1.Tag = "";
+            this.ScreenTwoLabelShervin1.Text = "Description";
+            this.ScreenTwoLabelShervin1.Visible = false;
             // 
             // ScreenTwoButton3
             // 
             this.ScreenTwoButton3.Enabled = false;
             this.ScreenTwoButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoButton3.Location = new System.Drawing.Point(12, 233);
+            this.ScreenTwoButton3.Location = new System.Drawing.Point(12, 292);
             this.ScreenTwoButton3.Name = "ScreenTwoButton3";
             this.ScreenTwoButton3.Size = new System.Drawing.Size(100, 46);
             this.ScreenTwoButton3.TabIndex = 12;
-            this.ScreenTwoButton3.Text = "Upgrade Shervin";
+            this.ScreenTwoButton3.Text = "Upgrade Ruben";
             this.ScreenTwoButton3.UseVisualStyleBackColor = true;
             this.ScreenTwoButton3.Visible = false;
+            this.ScreenTwoButton3.Click += new System.EventHandler(this.ScreenTwoButton3_Click);
             // 
             // ScreenTwoButton4
             // 
             this.ScreenTwoButton4.Enabled = false;
             this.ScreenTwoButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoButton4.Location = new System.Drawing.Point(12, 285);
+            this.ScreenTwoButton4.Location = new System.Drawing.Point(12, 374);
             this.ScreenTwoButton4.Name = "ScreenTwoButton4";
             this.ScreenTwoButton4.Size = new System.Drawing.Size(100, 46);
             this.ScreenTwoButton4.TabIndex = 13;
-            this.ScreenTwoButton4.Text = "Upgrade Shervin";
+            this.ScreenTwoButton4.Text = "Upgrade Frank";
             this.ScreenTwoButton4.UseVisualStyleBackColor = true;
             this.ScreenTwoButton4.Visible = false;
+            this.ScreenTwoButton4.Click += new System.EventHandler(this.ScreenTwoButton4_Click);
             // 
-            // ScreenTwoLabel3
+            // ScreenTwoLabelClick1
             // 
-            this.ScreenTwoLabel3.Enabled = false;
-            this.ScreenTwoLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoLabel3.Location = new System.Drawing.Point(118, 233);
-            this.ScreenTwoLabel3.Name = "ScreenTwoLabel3";
-            this.ScreenTwoLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ScreenTwoLabel3.Size = new System.Drawing.Size(206, 46);
-            this.ScreenTwoLabel3.TabIndex = 14;
-            this.ScreenTwoLabel3.Tag = "";
-            this.ScreenTwoLabel3.Text = "Level up to: 10 \r\nWill cost you: 500";
-            this.ScreenTwoLabel3.Visible = false;
+            this.ScreenTwoLabelClick1.Enabled = false;
+            this.ScreenTwoLabelClick1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelClick1.Location = new System.Drawing.Point(118, 129);
+            this.ScreenTwoLabelClick1.Name = "ScreenTwoLabelClick1";
+            this.ScreenTwoLabelClick1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelClick1.Size = new System.Drawing.Size(206, 55);
+            this.ScreenTwoLabelClick1.TabIndex = 14;
+            this.ScreenTwoLabelClick1.Tag = "";
+            this.ScreenTwoLabelClick1.Text = "Description";
+            this.ScreenTwoLabelClick1.Visible = false;
             // 
-            // ScreenTwoLabel4
+            // ScreenTwoLabelRuben1
             // 
-            this.ScreenTwoLabel4.Enabled = false;
-            this.ScreenTwoLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScreenTwoLabel4.Location = new System.Drawing.Point(118, 285);
-            this.ScreenTwoLabel4.Name = "ScreenTwoLabel4";
-            this.ScreenTwoLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ScreenTwoLabel4.Size = new System.Drawing.Size(206, 46);
-            this.ScreenTwoLabel4.TabIndex = 15;
-            this.ScreenTwoLabel4.Tag = "";
-            this.ScreenTwoLabel4.Text = "Level up to: 10 \r\nWill cost you: 500";
-            this.ScreenTwoLabel4.Visible = false;
+            this.ScreenTwoLabelRuben1.Enabled = false;
+            this.ScreenTwoLabelRuben1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelRuben1.Location = new System.Drawing.Point(118, 292);
+            this.ScreenTwoLabelRuben1.Name = "ScreenTwoLabelRuben1";
+            this.ScreenTwoLabelRuben1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelRuben1.Size = new System.Drawing.Size(206, 55);
+            this.ScreenTwoLabelRuben1.TabIndex = 15;
+            this.ScreenTwoLabelRuben1.Tag = "";
+            this.ScreenTwoLabelRuben1.Text = "Description";
+            this.ScreenTwoLabelRuben1.Visible = false;
+            // 
+            // ScreenTwoLabelFrank1
+            // 
+            this.ScreenTwoLabelFrank1.Enabled = false;
+            this.ScreenTwoLabelFrank1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelFrank1.Location = new System.Drawing.Point(118, 374);
+            this.ScreenTwoLabelFrank1.Name = "ScreenTwoLabelFrank1";
+            this.ScreenTwoLabelFrank1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelFrank1.Size = new System.Drawing.Size(206, 55);
+            this.ScreenTwoLabelFrank1.TabIndex = 16;
+            this.ScreenTwoLabelFrank1.Tag = "";
+            this.ScreenTwoLabelFrank1.Text = "Description";
+            this.ScreenTwoLabelFrank1.Visible = false;
+            // 
+            // ScreenTwoLabelClick3
+            // 
+            this.ScreenTwoLabelClick3.Enabled = false;
+            this.ScreenTwoLabelClick3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelClick3.Location = new System.Drawing.Point(118, 184);
+            this.ScreenTwoLabelClick3.Name = "ScreenTwoLabelClick3";
+            this.ScreenTwoLabelClick3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelClick3.Size = new System.Drawing.Size(206, 24);
+            this.ScreenTwoLabelClick3.TabIndex = 17;
+            this.ScreenTwoLabelClick3.Tag = "";
+            this.ScreenTwoLabelClick3.Text = "Price";
+            this.ScreenTwoLabelClick3.Visible = false;
+            // 
+            // ScreenTwoLabelClick2
+            // 
+            this.ScreenTwoLabelClick2.Enabled = false;
+            this.ScreenTwoLabelClick2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelClick2.Location = new System.Drawing.Point(12, 184);
+            this.ScreenTwoLabelClick2.Name = "ScreenTwoLabelClick2";
+            this.ScreenTwoLabelClick2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelClick2.Size = new System.Drawing.Size(100, 24);
+            this.ScreenTwoLabelClick2.TabIndex = 18;
+            this.ScreenTwoLabelClick2.Tag = "";
+            this.ScreenTwoLabelClick2.Text = "Current Level";
+            this.ScreenTwoLabelClick2.Visible = false;
+            // 
+            // ScreenTwoLabelShervin2
+            // 
+            this.ScreenTwoLabelShervin2.Enabled = false;
+            this.ScreenTwoLabelShervin2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelShervin2.Location = new System.Drawing.Point(12, 266);
+            this.ScreenTwoLabelShervin2.Name = "ScreenTwoLabelShervin2";
+            this.ScreenTwoLabelShervin2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelShervin2.Size = new System.Drawing.Size(100, 24);
+            this.ScreenTwoLabelShervin2.TabIndex = 20;
+            this.ScreenTwoLabelShervin2.Tag = "";
+            this.ScreenTwoLabelShervin2.Text = "Current Level";
+            this.ScreenTwoLabelShervin2.Visible = false;
+            // 
+            // ScreenTwoLabelShervin3
+            // 
+            this.ScreenTwoLabelShervin3.Enabled = false;
+            this.ScreenTwoLabelShervin3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelShervin3.Location = new System.Drawing.Point(118, 266);
+            this.ScreenTwoLabelShervin3.Name = "ScreenTwoLabelShervin3";
+            this.ScreenTwoLabelShervin3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelShervin3.Size = new System.Drawing.Size(206, 24);
+            this.ScreenTwoLabelShervin3.TabIndex = 19;
+            this.ScreenTwoLabelShervin3.Tag = "";
+            this.ScreenTwoLabelShervin3.Text = "Price";
+            this.ScreenTwoLabelShervin3.Visible = false;
+            // 
+            // ScreenTwoLabelRuben2
+            // 
+            this.ScreenTwoLabelRuben2.Enabled = false;
+            this.ScreenTwoLabelRuben2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelRuben2.Location = new System.Drawing.Point(12, 347);
+            this.ScreenTwoLabelRuben2.Name = "ScreenTwoLabelRuben2";
+            this.ScreenTwoLabelRuben2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelRuben2.Size = new System.Drawing.Size(100, 24);
+            this.ScreenTwoLabelRuben2.TabIndex = 22;
+            this.ScreenTwoLabelRuben2.Tag = "";
+            this.ScreenTwoLabelRuben2.Text = "Current Level";
+            this.ScreenTwoLabelRuben2.Visible = false;
+            // 
+            // ScreenTwoLabelRuben3
+            // 
+            this.ScreenTwoLabelRuben3.Enabled = false;
+            this.ScreenTwoLabelRuben3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelRuben3.Location = new System.Drawing.Point(118, 347);
+            this.ScreenTwoLabelRuben3.Name = "ScreenTwoLabelRuben3";
+            this.ScreenTwoLabelRuben3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelRuben3.Size = new System.Drawing.Size(206, 24);
+            this.ScreenTwoLabelRuben3.TabIndex = 21;
+            this.ScreenTwoLabelRuben3.Tag = "";
+            this.ScreenTwoLabelRuben3.Text = "Price";
+            this.ScreenTwoLabelRuben3.Visible = false;
+            // 
+            // ScreenTwoLabelFrank2
+            // 
+            this.ScreenTwoLabelFrank2.Enabled = false;
+            this.ScreenTwoLabelFrank2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelFrank2.Location = new System.Drawing.Point(12, 429);
+            this.ScreenTwoLabelFrank2.Name = "ScreenTwoLabelFrank2";
+            this.ScreenTwoLabelFrank2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelFrank2.Size = new System.Drawing.Size(100, 24);
+            this.ScreenTwoLabelFrank2.TabIndex = 24;
+            this.ScreenTwoLabelFrank2.Tag = "";
+            this.ScreenTwoLabelFrank2.Text = "Current Level";
+            this.ScreenTwoLabelFrank2.Visible = false;
+            // 
+            // ScreenTwoLabelFrank3
+            // 
+            this.ScreenTwoLabelFrank3.Enabled = false;
+            this.ScreenTwoLabelFrank3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabelFrank3.Location = new System.Drawing.Point(118, 429);
+            this.ScreenTwoLabelFrank3.Name = "ScreenTwoLabelFrank3";
+            this.ScreenTwoLabelFrank3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabelFrank3.Size = new System.Drawing.Size(206, 24);
+            this.ScreenTwoLabelFrank3.TabIndex = 23;
+            this.ScreenTwoLabelFrank3.Tag = "";
+            this.ScreenTwoLabelFrank3.Text = "Price";
+            this.ScreenTwoLabelFrank3.Visible = false;
             // 
             // Form1
             // 
@@ -234,13 +349,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(339, 483);
-            this.Controls.Add(this.ScreenTwoLabel4);
-            this.Controls.Add(this.ScreenTwoLabel3);
+            this.Controls.Add(this.ScreenTwoLabelFrank2);
+            this.Controls.Add(this.ScreenTwoLabelFrank3);
+            this.Controls.Add(this.ScreenTwoLabelRuben2);
+            this.Controls.Add(this.ScreenTwoLabelRuben3);
+            this.Controls.Add(this.ScreenTwoLabelShervin2);
+            this.Controls.Add(this.ScreenTwoLabelShervin3);
+            this.Controls.Add(this.ScreenTwoLabelClick2);
+            this.Controls.Add(this.ScreenTwoLabelClick3);
+            this.Controls.Add(this.ScreenTwoLabelFrank1);
+            this.Controls.Add(this.ScreenTwoLabelRuben1);
+            this.Controls.Add(this.ScreenTwoLabelClick1);
             this.Controls.Add(this.ScreenTwoButton4);
             this.Controls.Add(this.ScreenTwoButton3);
-            this.Controls.Add(this.ScreenTwoLabel2);
+            this.Controls.Add(this.ScreenTwoLabelShervin1);
             this.Controls.Add(this.ScreenTwoButton2);
-            this.Controls.Add(this.ScreenTwoLabel1);
             this.Controls.Add(this.ScreenTwoButton1);
             this.Controls.Add(this.screenOneLabel4);
             this.Controls.Add(this.screenOneLabel3);
@@ -268,14 +391,22 @@
         private System.Windows.Forms.Label screenOneLabel3;
         private System.Windows.Forms.Label screenOneLabel4;
         private System.Windows.Forms.Button ScreenTwoButton1;
-        private System.Windows.Forms.Label ScreenTwoLabel1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button ScreenTwoButton2;
-        private System.Windows.Forms.Label ScreenTwoLabel2;
+        private System.Windows.Forms.Label ScreenTwoLabelShervin1;
         private System.Windows.Forms.Button ScreenTwoButton3;
         private System.Windows.Forms.Button ScreenTwoButton4;
-        private System.Windows.Forms.Label ScreenTwoLabel3;
-        private System.Windows.Forms.Label ScreenTwoLabel4;
+        private System.Windows.Forms.Label ScreenTwoLabelClick1;
+        private System.Windows.Forms.Label ScreenTwoLabelRuben1;
+        private System.Windows.Forms.Label ScreenTwoLabelFrank1;
+        private System.Windows.Forms.Label ScreenTwoLabelClick3;
+        private System.Windows.Forms.Label ScreenTwoLabelClick2;
+        private System.Windows.Forms.Label ScreenTwoLabelShervin2;
+        private System.Windows.Forms.Label ScreenTwoLabelShervin3;
+        private System.Windows.Forms.Label ScreenTwoLabelRuben2;
+        private System.Windows.Forms.Label ScreenTwoLabelRuben3;
+        private System.Windows.Forms.Label ScreenTwoLabelFrank2;
+        private System.Windows.Forms.Label ScreenTwoLabelFrank3;
     }
 }
 

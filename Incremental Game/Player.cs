@@ -59,43 +59,55 @@ namespace Incremental_Game
         {
             switch (upgradeName)
             {
-                case "UpgradeClick":
+                case "Click":
                     {
-                        var price = _upgrade.GetUpgradePrice("Click", ClickLevel);
+                        var price = _upgrade.GetUpgradePrice(upgradeName, ClickLevel);
                         if (Points >= price)
                         {
+                            var upgrade = Upgrade.Find(x => x.Name.Contains(upgradeName));
+                            Upgrade.Remove(upgrade);
                             Points = _points.ChangePoints(Points, price, "Decrease");
                             ClickLevel = ChangeLevel(ClickLevel);
+                            Upgrade.Add(_upgrade.Upgrades(upgradeName, ClickLevel));
                         }
                         return;
                     }
-                case "UpgradeShervin":
+                case "Shervin":
                     {
-                        var price = _upgrade.GetUpgradePrice("Shervin", ShervinLevel);
+                        var price = _upgrade.GetUpgradePrice(upgradeName, ShervinLevel);
                         if (Points >= price)
                         {
+                            var upgrade = Upgrade.Find(x => x.Name.Contains(upgradeName));
+                            Upgrade.Remove(upgrade);
                             Points = _points.ChangePoints(Points, price, "Decrease");
                             ShervinLevel = ChangeLevel(ShervinLevel);
+                            Upgrade.Add(_upgrade.Upgrades(upgradeName, ShervinLevel));
                         }
                         return;
                     }
-                case "UpgradeRuben":
+                case "Ruben":
                     {
-                        var price = _upgrade.GetUpgradePrice("Ruben", RubenLevel);
+                        var price = _upgrade.GetUpgradePrice(upgradeName, RubenLevel);
                         if (Points >= price)
                         {
+                            var upgrade = Upgrade.Find(x => x.Name.Contains(upgradeName));
+                            Upgrade.Remove(upgrade);
                             Points = _points.ChangePoints(Points, price, "Decrease");
                             RubenLevel = ChangeLevel(RubenLevel);
+                            Upgrade.Add(_upgrade.Upgrades(upgradeName, RubenLevel));
                         }
                         return;
                     }
-                case "UpgradeFrank":
+                case "Frank":
                     {
-                        var price = _upgrade.GetUpgradePrice("Frank", FrankLevel);
+                        var price = _upgrade.GetUpgradePrice(upgradeName, FrankLevel);
                         if (Points >= price)
                         {
+                            var upgrade = Upgrade.Find(x => x.Name.Contains(upgradeName));
+                            Upgrade.Remove(upgrade);
                             Points = _points.ChangePoints(Points, price, "Decrease");
                             FrankLevel = ChangeLevel(FrankLevel);
+                            Upgrade.Add(_upgrade.Upgrades(upgradeName, FrankLevel));
                         }
                         return;
                     }
