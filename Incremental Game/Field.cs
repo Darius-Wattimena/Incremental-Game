@@ -1,4 +1,6 @@
-﻿namespace Incremental_Game
+﻿using System.Globalization;
+
+namespace Incremental_Game
 {
     internal class Field
     {
@@ -44,14 +46,22 @@
             var upgrades = _player.Upgrade;
             foreach (var upgrade in upgrades)
             {
-                if (upgrade.Name == upgradeName && returnName == "Name")
-                    return upgrade.Name;
-                if (upgrade.Name == upgradeName && returnName == "Description")
-                    return upgrade.Description;
-                if (upgrade.Name == upgradeName && returnName == "Level")
-                    return upgrade.Level.ToString();
-                if (upgrade.Name == upgradeName && returnName == "Price")
-                    return upgrade.Price.ToString();
+                if (upgrade.Name == upgradeName)
+                {
+                    switch (returnName)
+                    {
+                        case "Name":
+                            return upgrade.Name;
+                        case "Description":
+                            return upgrade.Description;
+                        case "Level":
+                            return upgrade.Level.ToString();
+                        case "Price":
+                            return upgrade.Price.ToString(CultureInfo.CurrentCulture);
+                        case "Profit":
+                            return upgrade.Profit.ToString(CultureInfo.CurrentCulture);
+                    }
+                }
             }
             return null;
         }
