@@ -7,58 +7,34 @@ namespace Incremental_Game
         private readonly Player _player = new Player();
         public double ViewPoints;
 
-        public Field()
+        public void ClickReceive(string intention, string upgradeName)
         {
-            ViewPoints = _player.GetPoints();
+            switch (intention)
+            {
+                case "AddPoints":
+                    ViewPoints = _player.Click("Increase", "Click");
+                    return;
+                case "BuyUpgrade":
+                    _player.BuyUpgrade(upgradeName);
+                    return;
+                default:
+                    return;
+            }
+        }
+
+        public void TimerReceive()
+        {
+            _player.ReveivePoints();
         }
 
         public string GetCurrentLevel(string upgradeName)
         {
-            switch (upgradeName)
-            {
-                case "Click":
-                    return _player.ClickLevel.ToString();
-                case "Shervin":
-                    return _player.ShervinLevel.ToString();
-                case "Ruben":
-                    return _player.RubenLevel.ToString();
-                case "Frank":
-                    return _player.FrankLevel.ToString();
-            }
-            return null;
-        }
-        public double GetCurrentPoints()
-        {
-            return _player.GetPoints();
+            return _player.GetUpgradeLevel(upgradeName).ToString();
         }
 
-        public string GetUpgradeCost(string naam)
+        public string GetCurrentPoints()
         {
-            return _player.GetUpgradeCost(naam);
-        }
-
-        public void ClickReceive(string intention)
-        {
-            switch (intention)
-            {
-                case "ScoreClick":
-                    ViewPoints = _player.Click("Increase");
-                    return;
-                case "UpgradeClick":
-                    _player.GetUpgrade("Click");
-                    return;
-                case "UpgradeShervin":
-                    _player.GetUpgrade("Shervin");
-                    return;
-                case "UpgradeRuben":
-                    _player.GetUpgrade("Ruben");
-                    return;
-                case "UpgradeFrank":
-                    _player.GetUpgrade("Frank");
-                    return;
-
-            }
-            ViewPoints = _player.Click("Increase");
+            return _player.GetPoints().ToString(CultureInfo.CurrentCulture);
         }
 
         public string GetUpgradeData(string upgradeName, string returnName)
@@ -75,7 +51,7 @@ namespace Incremental_Game
                         return upgrade.Description;
                     case "Level":
                         return upgrade.Level.ToString();
-                    case "LevelPlusOne":
+                    case "NewLevel":
                         return upgrade.Level+1.ToString();
                     case "Price":
                         return upgrade.Price.ToString(CultureInfo.CurrentCulture);

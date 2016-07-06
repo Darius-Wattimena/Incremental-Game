@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Incremental_Game
+﻿namespace Incremental_Game
 {
 
     internal class Upgrade : IUpgrade

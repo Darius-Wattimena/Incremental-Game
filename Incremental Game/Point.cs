@@ -1,6 +1,4 @@
-﻿using System.Runtime.Remoting.Messaging;
-
-namespace Incremental_Game
+﻿namespace Incremental_Game
 {
     internal class Point
     {
