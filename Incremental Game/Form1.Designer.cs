@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homeButton = new System.Windows.Forms.Button();
             this.upgradeButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -57,6 +58,7 @@
             this.ScreenTwoLabelRuben4 = new System.Windows.Forms.Label();
             this.ScreenTwoLabelShervin4 = new System.Windows.Forms.Label();
             this.ScreenTwoLabelClick4 = new System.Windows.Forms.Label();
+            this.ScreenTwoLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // homeButton
@@ -401,12 +403,26 @@
             this.ScreenTwoLabelClick4.Text = "Profit";
             this.ScreenTwoLabelClick4.Visible = false;
             // 
+            // ScreenTwoLabel
+            // 
+            this.ScreenTwoLabel.Enabled = false;
+            this.ScreenTwoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScreenTwoLabel.Location = new System.Drawing.Point(12, 453);
+            this.ScreenTwoLabel.Name = "ScreenTwoLabel";
+            this.ScreenTwoLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ScreenTwoLabel.Size = new System.Drawing.Size(312, 24);
+            this.ScreenTwoLabel.TabIndex = 29;
+            this.ScreenTwoLabel.Tag = "";
+            this.ScreenTwoLabel.Text = "Upgrades are risky they can give you less profit!!";
+            this.ScreenTwoLabel.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(339, 483);
+            this.Controls.Add(this.ScreenTwoLabel);
             this.Controls.Add(this.ScreenTwoLabelFrank4);
             this.Controls.Add(this.ScreenTwoLabelRuben4);
             this.Controls.Add(this.ScreenTwoLabelShervin4);
@@ -434,10 +450,13 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.upgradeButton);
             this.Controls.Add(this.homeButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Form1";
+            this.Text = "Greaper\'s Game";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
@@ -473,6 +492,7 @@
         private System.Windows.Forms.Label ScreenTwoLabelRuben4;
         private System.Windows.Forms.Label ScreenTwoLabelShervin4;
         private System.Windows.Forms.Label ScreenTwoLabelClick4;
+        private System.Windows.Forms.Label ScreenTwoLabel;
     }
 }
 

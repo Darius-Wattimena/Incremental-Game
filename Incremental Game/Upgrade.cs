@@ -1,4 +1,6 @@
-﻿namespace Incremental_Game
+﻿using System;
+
+namespace Incremental_Game
 {
 
     internal class Upgrade : IUpgrade
@@ -10,11 +12,11 @@
                 case "Click":
                     return 25 * level;
                 case "Shervin":
-                    return 100 * (level + 1);
-                case "Ruben":
-                    return 200 * (level + 1);
-                case "Frank":
                     return 500 * (level + 1);
+                case "Ruben":
+                    return 2500 * (level + 1);
+                case "Frank":
+                    return 20000 * (level + 1);
             }
             return 0;
         }
@@ -26,13 +28,20 @@
                 case "Click":
                     return 0.5 * level;
                 case "Shervin":
-                    return 2.5 * level;
+                    return RandomNumber(2) * level;
                 case "Ruben":
-                    return 5.0 * level;
+                    return RandomNumber(10) * level;
                 case "Frank":
-                    return 7.5 * level;
+                    return RandomNumber(50) * level;
             }
             return 0;
+        }
+
+        public double RandomNumber(int median)
+        {
+            var rnd = new Random();
+            var value = rnd.Next(median - 5, median + 5);
+            return value < 1 ? 1 : value;
         }
 
         public Upgrade Upgrades(string name, int level)

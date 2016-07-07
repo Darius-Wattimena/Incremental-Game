@@ -4,7 +4,7 @@
     {
         public int StartingPoints()
         {
-            return 100;
+            return 100000;
         }
 
         public double ChangePoints(double currentPoints, double changeValue, string caseValue)

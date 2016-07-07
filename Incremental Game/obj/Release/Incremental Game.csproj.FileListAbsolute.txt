@@ -1,0 +1,8 @@
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\bin\Release\Incremental Game.exe.config
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\bin\Release\Incremental Game.exe
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\bin\Release\Incremental Game.pdb
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Release\Incremental_Game.Form1.resources
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Release\Incremental_Game.Properties.Resources.resources
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Release\Incremental Game.csproj.GenerateResource.Cache
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Release\Incremental Game.exe
+C:\Users\DariusPC\documents\visual studio 2015\Projects\Incremental Game\Incremental Game\obj\Release\Incremental Game.pdb

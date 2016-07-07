@@ -137,6 +137,8 @@ namespace Incremental_Game
                 ScreenTwoLabelFrank3.Visible = false;
                 ScreenTwoLabelFrank4.Enabled = false;
                 ScreenTwoLabelFrank4.Visible = false;
+                ScreenTwoLabel.Enabled = false;
+                ScreenTwoLabel.Visible = false;
             }
             else
             {
@@ -182,6 +184,8 @@ namespace Incremental_Game
                 ScreenTwoLabelFrank3.Visible = true;
                 ScreenTwoLabelFrank4.Enabled = true;
                 ScreenTwoLabelFrank4.Visible = true;
+                ScreenTwoLabel.Enabled = true;
+                ScreenTwoLabel.Visible = true;
             }
         }
     }
